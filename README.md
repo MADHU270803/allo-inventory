@@ -88,10 +88,11 @@ Two safety layers are implemented:
 `vercel.json` schedules:
 
 ```txt
-* * * * *
+0 0 * * *
 ```
 
-This calls:
+This runs once per day (midnight UTC) and calls:
+
 
 ```txt
 GET /api/cron/expire
